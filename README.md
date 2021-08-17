@@ -44,9 +44,9 @@ pandas==1.1.5
 ## docker使用流程
 ### 1. 於終端機輸入
 ```
-git clone https://github.com/Chei-YuanChi/Django_HW/.git
+git clone https://github.com/Chei-YuanChi/Django_HW.git
 cd Django_hw
-docker-compose up
+docker-compose up -d --build
 ```
 ### 2. 連線至 ( http://127.0.0.1:8000/recommender/index/ )
 
