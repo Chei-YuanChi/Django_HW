@@ -1,1 +1,23 @@
-# Django_HW
+# IIR新生訓練Django_HW
+## docker使用流程
+### 1. 於終端機輸入
+```
+git clone https://github.com/Chei-YuanChi/Django_HW/tree/master.git
+cd Django_hw
+docker-compose up
+```
+### 2. 連線至 ( http://127.0.0.1:8000/recommender/index/ )
+
+## 網頁使用說明
+### 1. 主頁( Home ) ：
+#### * 顯示各分頁可以做的事：
+![](https://i.imgur.com/RPLG8Pd.png)
+#### * 左側點擊可進入各分頁
+![](https://i.imgur.com/hjuyheJ.png)
+#### * Toggle Menu ： 顯示或隱藏左側按鈕
+#### *Home ： 回到主頁面
+### 2. Get list ： 輸入欲 insert 至資料庫之資料數量 並 output 所有在資料庫中的資料(若欲輸入之資料已在資料庫中則跳過)
+### 3. Delete ： 輸入 userId 以及 movieId 若在資料庫中則刪除
+### 4. Watched movies ： 輸入指定 userId 並 output 其在資料庫中看過的電影
+### 5. Modify ： 輸入 userId, movieId, rating 若 userId 及 movieId 在資料庫中則修改其對應的 rating 為輸入之 rating 值
+### 6. Recommend ： 輸入指定 userId 並為其推薦 2 部電影
