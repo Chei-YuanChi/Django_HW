@@ -48,7 +48,7 @@ git clone https://github.com/Chei-YuanChi/Django_HW/.git
 cd Django_hw
 docker-compose up
 ```
-### 2. 連線至 ( http://127.0.0.1:8000/recommender/index/ )
+### 2. 連線至 ( http://localhost:8000/recommender/index/ )
 
 ## 網頁使用說明
 ### 1. 主頁( Home ) ：
