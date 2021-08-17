@@ -1,50 +1,8 @@
 # IIR新生訓練Django_HW
-## 建置 Django - docker
-* Dockerfile ：
-```
-FROM python:3.6
-
-ENV PYTHONUNBUFFERED 1
-
-RUN mkdir /code
-WORKDIR /code
-
-RUN pip install pip -U
-
-ADD requirements.txt /code/
-
-RUN pip install -r requirements.txt
-
-ADD . /code/
-```
-* docker-compose.yaml ：
-```
-web:
-  build: .
-  environment:
-    MYENV: EXAMPLE
-  volumes:
-    - .:/code
-web_migrate:
-  extends:
-    service: web
-  command: python manage.py migrate
-web_run:
-  extends:
-    service: web
-  command: python manage.py runserver 0.0.0.0:8000
-  ports:
-    - "8000:8000"
-```
-* requirement ：
-```
-django==2.2
-pandas==1.1.5
-```
 ## docker使用流程
 ### 1. 於終端機輸入
 ```
-git clone https://github.com/Chei-YuanChi/Django_HW/.git
+git clone https://github.com/Chei-YuanChi/Django_HW/tree/master.git
 cd Django_hw
 docker-compose up
 ```
