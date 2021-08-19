@@ -53,6 +53,7 @@ docker-compose up -d --build
 ```
 docker-compose down
 ```
+### 4. model weight 儲存於 movie_recommender.h5
 
 ## 網頁使用說明
 ### 1. 主頁( Home ) ：
